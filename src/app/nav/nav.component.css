@@ -1,0 +1,55 @@
+.spacer {
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar:hover {
+        background-image: linear-gradient(90deg, #150c35, #2b1e58, rgb(68, 86, 190), rgb(134, 139, 165), rgb(68, 86, 190), #2b1e58, #070316);
+    }
+}
+
+@media screen and (max-width: 222px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: linear-gradient(90deg, #690505e1, rgba(81, 92, 153, 0.808), rgb(112, 120, 158), rgba(81, 92, 153, 0.808), #2c2eb6e1);
+    }
+}
+
+.navbar {
+    background-image: linear-gradient(90deg, #050769e1, rgba(81, 92, 153, 0.808), rgb(112, 120, 158), rgba(81, 92, 153, 0.808), #2c2eb6e1);
+}
+
+span {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.navbar img {
+    margin: 0 16px;
+    position: relative;
+}
+
+.navbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+}
+
+.navbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.navbar #twitter-logo:hover,
+.navbar #youtube-logo:hover {
+    opacity: 0.8;
+}
+
+.navbar-toggler:hover {
+    opacity: 0.5;
+}
+
+ul {
+    margin-left: 20px;
+}

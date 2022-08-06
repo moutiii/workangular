@@ -1,0 +1,122 @@
+/*https://www.youtube.com/watch?v=alLCcq3Kj18*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    background-image: radial-gradient(circle at 50%, rgba(16, 16, 34, 0.822), rgba(115, 152, 170, 0.336), rgba(174, 246, 255, 0));
+}
+
+.box {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1500px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1500px) rotateY(360deg);
+    }
+}
+
+
+/*------------- div style & transformation translation--------------------*/
+
+.box div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--v) * 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+
+/*------slide image style----------*/
+
+.box div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*---------------------------medium and small size ----------------------------*/
+
+@media screen and (max-width: 992px) {
+    .box {
+        height: 180px;
+        width: 150px;
+        margin-top: 0px;
+    }
+    .box div {
+        transform: rotateY(calc(var(--v) * 45deg)) translateZ(200px);
+    }
+    .content {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box {
+        height: 100px;
+        width: 30px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .box div {
+        transform: rotateY(calc(var(--v) * 45deg)) translateZ(70px);
+    }
+    .content {
+        height: 20vh;
+    }
+}
+
+
+/*---------------*/
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: perspective(1500px) rotateY(0deg);
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: perspective(1500px) rotateY(360deg);
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+}
+
+.box div img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+.box:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+/*-----------------------------------------*/
