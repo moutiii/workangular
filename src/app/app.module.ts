@@ -38,6 +38,7 @@ import { ChicoComponent } from './grid-cool-effect-image/chico/chico.component';
 import { MiloComponent } from './grid-cool-effect-image/milo/milo.component';
 import { BetterComponent } from './grid-cool-effect-image/better/better.component';
 import { TransitionimgComponent } from './grid-cool-effect-image/transitionimg/transitionimg.component';
+import { ImageeffectComponent } from './grid-cool-effect-image/imageeffect/imageeffect.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { TransitionimgComponent } from './grid-cool-effect-image/transitionimg/t
     MiloComponent,
     BetterComponent,
     TransitionimgComponent,
+    ImageeffectComponent,
  
    
   ],
