@@ -38,14 +38,6 @@ import { ChicoComponent } from './grid-cool-effect-image/chico/chico.component';
 import { MiloComponent } from './grid-cool-effect-image/milo/milo.component';
 import { BetterComponent } from './grid-cool-effect-image/better/better.component';
 import { TransitionimgComponent } from './grid-cool-effect-image/transitionimg/transitionimg.component';
-import { TesComponent } from './tes/tes.component';
-import { TeComponent } from './te/te.component';
-
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -82,8 +74,7 @@ import { TeComponent } from './te/te.component';
     MiloComponent,
     BetterComponent,
     TransitionimgComponent,
-    TesComponent,
-    TeComponent,
+ 
    
   ],
   imports: [
