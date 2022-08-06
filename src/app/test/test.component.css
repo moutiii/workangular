@@ -1,0 +1,3 @@
+.mybutton {
+    list-style-image: "bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none"
+}

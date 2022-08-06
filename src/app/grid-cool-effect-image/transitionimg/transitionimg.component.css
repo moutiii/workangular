@@ -1,0 +1,338 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100,100);
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* HOVER EFFECT 1*/
+
+figure.HoverSnip_1 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 349px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+}
+
+figure.HoverSnip_1 * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+figure.HoverSnip_1 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+figure.HoverSnip_1 figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+figure.HoverSnip_1 h3,
+figure.HoverSnip_1 h4 {
+    margin: 0;
+}
+
+figure.HoverSnip_1 h3 {
+    font-weight: 600;
+}
+
+figure.HoverSnip_1 h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+figure.HoverSnip_1 i {
+    font-size: 32px;
+}
+
+figure.HoverSnip_1:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
+
+figure.HoverSnip_1.green:after {
+    background-color: #229955;
+}
+
+figure.HoverSnip_1.orange:after {
+    background-color: #d67118;
+}
+
+figure.HoverSnip_1 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.HoverSnip_1:hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+figure.HoverSnip_1:hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
+}
+
+
+/* HOVER EFFECT 2*/
+
+.HoverSnip_2 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 349px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+}
+
+.HoverSnip_2 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s 0.5s ease;
+    transition: all 0.35s 0.5s ease;
+}
+
+.HoverSnip_2 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.HoverSnip_2 figcaption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.HoverSnip_2 h3 {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    -webkit-transform: translate(25%, -50%);
+    transform: translate(25%, -50%);
+    left: 0;
+    top: 50%;
+    opacity: 0;
+    padding: 0 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.HoverSnip_2:before {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    top: 0;
+    right: 0;
+    content: '';
+    background-color: #166337;
+    z-index: 1;
+    opacity: 0.4;
+    -webkit-transition: all 0.35s 0.3s ease-in;
+    transition: all 0.35s 0.3s ease-in;
+}
+
+.HoverSnip_2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 0 200px 200px;
+    border-color: transparent transparent transparent #166337;
+    opacity: 0.9;
+    -webkit-transition: all 0.35s 0s ease-out;
+    transition: all 0.35s 0s ease-out;
+}
+
+.HoverSnip_2 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.HoverSnip_2:hover img,
+.HoverSnip_2.hover img {
+    opacity: 0.4;
+}
+
+.HoverSnip_2:hover h3,
+.HoverSnip_2.hover h3 {
+    opacity: 1;
+}
+
+.HoverSnip_2:hover h3,
+.HoverSnip_2.hover h3 {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.HoverSnip_2:hover:before,
+.HoverSnip_2.hover:before {
+    left: 0;
+    -webkit-transition: all 0.35s 0s ease-out;
+    transition: all 0.35s 0s ease-out;
+}
+
+.HoverSnip_2:hover:after,
+.HoverSnip_2.hover:after {
+    right: 50%;
+    -webkit-transition: all 0.35s 0.2s ease-in;
+    transition: all 0.35s 0.2s ease-in;
+}
+
+
+/* HOVER EFFECT 3*/
+
+figure.HoverSnip_3 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 349px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.HoverSnip_3 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+figure.HoverSnip_3 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+figure.HoverSnip_3 i {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: #000000;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+figure.HoverSnip_3 h3 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+figure.HoverSnip_3:hover h3 {
+    top: 60%;
+    transition: all 500ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 1;
+}
+
+figure.HoverSnip_3 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+figure.HoverSnip_3.blue {
+    background-color: #2472a4;
+}
+
+figure.HoverSnip_3.blue i {
+    color: #20638f;
+}
+
+figure.HoverSnip_3.red {
+    background-color: #ab3326;
+}
+
+figure.HoverSnip_3.red i {
+    color: #962d22;
+}
+
+figure.HoverSnip_3:hover img {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+figure.HoverSnip_3:hover i {
+    top: 50%;
+    transition: all 500ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 1;
+}
